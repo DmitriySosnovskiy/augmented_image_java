@@ -41,29 +41,6 @@ public class AugmentedImageRenderer {
 
   public AugmentedImageRenderer() {}
 
-  public void createOnGlThread(Context context) throws IOException {
-
-    imageFrameUpperLeft.createOnGlThread(
-        context, "models/frame_upper_left.obj", "models/frame_base.png");
-    imageFrameUpperLeft.setMaterialProperties(0.0f, 3.5f, 1.0f, 6.0f);
-    imageFrameUpperLeft.setBlendMode(BlendMode.AlphaBlending);
-
-    imageFrameUpperRight.createOnGlThread(
-        context, "models/frame_upper_right.obj", "models/frame_base.png");
-    imageFrameUpperRight.setMaterialProperties(0.0f, 3.5f, 1.0f, 6.0f);
-    imageFrameUpperRight.setBlendMode(BlendMode.AlphaBlending);
-
-    imageFrameLowerLeft.createOnGlThread(
-        context, "models/frame_lower_left.obj", "models/frame_base.png");
-    imageFrameLowerLeft.setMaterialProperties(0.0f, 3.5f, 1.0f, 6.0f);
-    imageFrameLowerLeft.setBlendMode(BlendMode.AlphaBlending);
-
-    imageFrameLowerRight.createOnGlThread(
-        context, "models/frame_lower_right.obj", "models/frame_base.png");
-    imageFrameLowerRight.setMaterialProperties(0.0f, 3.5f, 1.0f, 6.0f);
-    imageFrameLowerRight.setBlendMode(BlendMode.AlphaBlending);
-  }
-
   public void draw(
       float[] viewMatrix,
       float[] projectionMatrix,

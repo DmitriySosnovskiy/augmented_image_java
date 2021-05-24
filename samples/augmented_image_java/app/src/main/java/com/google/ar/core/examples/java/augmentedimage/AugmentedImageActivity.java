@@ -243,7 +243,6 @@ public class AugmentedImageActivity extends AppCompatActivity implements GLSurfa
     try {
       // Create the texture and pass it to ARCore session to be filled during update().
       backgroundRenderer.createOnGlThread(/*context=*/ this);
-      augmentedImageRenderer.createOnGlThread(/*context=*/ this);
     } catch (IOException e) {
       Log.e(TAG, "Failed to read an asset file", e);
     }

@@ -64,6 +64,7 @@ public class SampleRender {
             renderer.onDrawFrame(SampleRender.this);
           }
         });
+
     glSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
     glSurfaceView.setWillNotDraw(false);
   }
